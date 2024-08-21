@@ -15,7 +15,7 @@ nota3 = float(input("Terceira nota: "))
 soma = (nota1 + nota2 + nota3)
 media = soma / 3
 #exibindo resultados 
-if media >=7 7:
+if media >= 7 :
     print("O aluno está APROVADO!!!")
 else:
     print("O aluno está REPROVADO!!!")
