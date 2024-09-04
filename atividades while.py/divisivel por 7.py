@@ -8,5 +8,4 @@ numero = 51
 while numero % 7 != 0:
     numero += 1  # Add o número até encontrar um que seja divisível por 7
 
-# Exibe o número encontrado
 print(f"O primeiro número maior que 50 que é divisível por 7 é: {numero}")
