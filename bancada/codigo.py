@@ -24,9 +24,8 @@ lista_numeros = []
 contador = 0
 maximo_numero = 0
 minimo_numero = 0
-
-
     
+#def para verificar se o número é par ou impar     
 def verificar_pares_impares(lista_numero):
     contador_par = 0
     contador_impar = 0
@@ -37,17 +36,16 @@ def verificar_pares_impares(lista_numero):
             contador_impar += 1
     return contador_par, contador_impar 
 
-
-
+#comando utilizado para gerar números automaticos e aleatorios para testes 
 for i in range (5):
     numero = random.randint(-10,10)
     lista_numeros.append(numero)
     contador += 1
 
-
+#utilizando o def para descobrir o par e impar entre os n´meros randomizados 
 par, impar = verificar_pares_impares(lista_numeros)
 
-
+#def que verifica os numeros positivos e negativos a partir de 0
 def verificar_positivos_negativos(lista_numero):
     contador_positivo = 0
     contador_negativo = 0
@@ -57,9 +55,10 @@ def verificar_positivos_negativos(lista_numero):
         else:
             contador_negativo += 1
     return contador_positivo, contador_negativo
+#verificado numeros positivos e negativos assim ativando a def 
 positivo, negativo = verificar_positivos_negativos(lista_numeros)
 
-
+#def usada para numeros impares e paresa 
 def media_pares(lista_numero):
     soma_pares = 0
     quantidade_par = 0
@@ -71,7 +70,7 @@ def media_pares(lista_numero):
         return soma_pares / quantidade_par
     return 0
 
-
+#def para dizer a media de todos os numeros impares
 def media_impares(lista_numero):
     soma_impares = 0
     quantidade_impar = 0
@@ -95,8 +94,6 @@ def media_total(lista_numero):
     return 0
     
        
-
-
 maximo_numero = max(lista_numeros)
 minimo_numero = min(lista_numeros)
 
@@ -112,5 +109,3 @@ print(f"A média dos números impares é: {media_impares(lista_numeros)}")
 print(f"A média de todos os números é: {media_total(lista_numeros)}")
 for numero in lista_numeros:
     print(numero)
-
-
